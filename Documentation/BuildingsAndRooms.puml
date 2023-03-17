@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/object-diagram
+object Room
+object Building
+
+Building : public Building(List<Room> rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding)
+Building : private final List<Room> rooms
+Building : private int numberOfBathrooms
+Building : private int numberOfFloors
+Building : private boolean isOfficeBuilding
+
+Room : private int numberOfLamps
+Room : private int numberOfWindows
+Room : private int numberOfDoors
+
+
+@enduml
